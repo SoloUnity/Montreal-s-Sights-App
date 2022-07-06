@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B2138742875DA3600BB055C /* Montreal_s_SightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2138732875DA3600BB055C /* Montreal_s_SightsApp.swift */; };
-		8B2138762875DA3600BB055C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2138752875DA3600BB055C /* ContentView.swift */; };
+		8B2138742875DA3600BB055C /* MontrealsSightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2138732875DA3600BB055C /* MontrealsSightsApp.swift */; };
+		8B2138762875DA3600BB055C /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2138752875DA3600BB055C /* LaunchView.swift */; };
 		8B2138782875DA3700BB055C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2138772875DA3700BB055C /* Assets.xcassets */; };
 		8B21387B2875DA3700BB055C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B21387A2875DA3700BB055C /* Preview Assets.xcassets */; };
+		8B2138852875DD1500BB055C /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2138842875DD1500BB055C /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B2138702875DA3600BB055C /* Montreal's Sights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Montreal's Sights.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B2138732875DA3600BB055C /* Montreal_s_SightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Montreal_s_SightsApp.swift; sourceTree = "<group>"; };
-		8B2138752875DA3600BB055C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B2138732875DA3600BB055C /* MontrealsSightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontrealsSightsApp.swift; sourceTree = "<group>"; };
+		8B2138752875DA3600BB055C /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		8B2138772875DA3700BB055C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B21387A2875DA3700BB055C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B2138842875DD1500BB055C /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,7 @@
 		8B2138722875DA3600BB055C /* Montreal's Sights */ = {
 			isa = PBXGroup;
 			children = (
-				8B2138732875DA3600BB055C /* Montreal_s_SightsApp.swift */,
+				8B2138732875DA3600BB055C /* MontrealsSightsApp.swift */,
 				8B2138832875DAB400BB055C /* Views */,
 				8B2138822875DAAD00BB055C /* ViewModels */,
 				8B2138812875DAA300BB055C /* Models */,
@@ -79,6 +81,7 @@
 		8B2138822875DAAD00BB055C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8B2138842875DD1500BB055C /* ContentModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -86,7 +89,7 @@
 		8B2138832875DAB400BB055C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8B2138752875DA3600BB055C /* ContentView.swift */,
+				8B2138752875DA3600BB055C /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,8 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B2138762875DA3600BB055C /* ContentView.swift in Sources */,
-				8B2138742875DA3600BB055C /* Montreal_s_SightsApp.swift in Sources */,
+				8B2138762875DA3600BB055C /* LaunchView.swift in Sources */,
+				8B2138742875DA3600BB055C /* MontrealsSightsApp.swift in Sources */,
+				8B2138852875DD1500BB055C /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +298,7 @@
 				DEVELOPMENT_TEAM = 56W5CBC8F4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant permission to find restauraunts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +328,7 @@
 				DEVELOPMENT_TEAM = 56W5CBC8F4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant permission to find restauraunts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
