@@ -16,25 +16,29 @@ struct HomeView: View {
         
         if model.restaurants.count != 0 || model.sights.count != 0{
             
-            // Determine if we should show list or map
-            if !isMapShowing{
-                // Show list
-                VStack{
-                    HStack{
-                        Image(systemName: "location")
-                        Text("Montreal")
-                        Spacer()
-                        Text("Switch to map view")
+            NavigationView{
+                // Determine if we should show list or map
+                if !isMapShowing{
+                    // Show list
+                    VStack{
+                        HStack{
+                            Image(systemName: "location")
+                            Text("Montreal")
+                            Spacer()
+                            Text("Switch to map view")
+                        }
+                        Divider()
+                        BusinessList()
                     }
-                    Divider()
-                    BusinessList()
+                    .padding([.horizontal, .top])
+                    .navigationBarHidden(true)
                 }
-                .padding([.horizontal, .top])
+                else{
+                    // Show map
+                    
+                }
             }
-            else{
-                // Show map
-                
-            }
+            
         }
         else{
             // Waiting for data -> Loading spinner
