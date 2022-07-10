@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Business: Decodable {
+struct Business: Decodable, Identifiable {
     
     var id: String? // Everything is optional for flexibility in case not returned in API
     var alias: String?
