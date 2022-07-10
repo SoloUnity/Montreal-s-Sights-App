@@ -12,7 +12,7 @@ struct BusinessList: View {
     @EnvironmentObject var model:ContentModel
     
     var body: some View {
-        ScrollView{
+        ScrollView(showsIndicators: false){
             
             
             
@@ -23,6 +23,7 @@ struct BusinessList: View {
                 
             }
         }
+        
     }
 }
 
