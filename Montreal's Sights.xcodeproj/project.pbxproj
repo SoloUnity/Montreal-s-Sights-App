@@ -162,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				8BA133DC287A594F00C44B12 /* HomeView.swift */,
+				8B80FB66287B322400E083DD /* Detail */,
 				8B872392287B711200DF12F1 /* Map */,
 				8BA133DE287A5C3400C44B12 /* List */,
 			);
@@ -175,7 +176,6 @@
 				8BA133E1287A5E8F00C44B12 /* BusinessSectionHeader.swift */,
 				8BA133E3287A5F3300C44B12 /* BusinessSection.swift */,
 				8B80FB64287B229200E083DD /* BusinessRow.swift */,
-				8B80FB66287B322400E083DD /* Detail */,
 			);
 			path = List;
 			sourceTree = "<group>";
