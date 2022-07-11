@@ -37,19 +37,43 @@ struct HomeView: View {
                     .navigationBarHidden(true)
                 }
                 else{
-                    // Show map
-                    BusinessMap(selectedBusiness: $selectedBusiness)
-                        .ignoresSafeArea()
-                        .sheet(item: $selectedBusiness) { business in
+                    ZStack(alignment: .top){
+                        
+                        // Show map
+                        BusinessMap(selectedBusiness: $selectedBusiness)
+                            .ignoresSafeArea()
+                            .sheet(item: $selectedBusiness) { business in
+                                
+                                // Create a business detail view instance
+                                // Pass in selected business
+                                BusinessDetail(business: business)
+                            }
+                        
+                        ZStack{
+                            Rectangle()
+                                .foregroundColor(.white)
+                                .cornerRadius(5)
+                                .frame(height:48)
                             
-                            // Create a business detail view instance
-                            // Pass in selected business
-                            BusinessDetail(business: business)
+                            HStack{
+                                Image(systemName: "location")
+                                Text("Montreal")
+                                Spacer()
+                                Button("Switch to list view"){
+                                    self.isMapShowing = false
+                                }
+                            }
+                            .padding()
+                            }
+                        .padding()
                         }
+                    .navigationBarHidden(true)
+                    
+                    }
+                    
                 }
             }
             
-        }
         else{
             // Waiting for data -> Loading spinner
             ProgressView()
