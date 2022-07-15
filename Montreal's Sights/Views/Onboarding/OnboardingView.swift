@@ -27,7 +27,7 @@ struct OnboardingView: View {
                         .resizable()
                         .scaledToFit()
                     
-                    Text("Welcome to Montreal Sights!")
+                    Text("Welcome to Montreal's Sights!")
                         .bold()
                         .font(.title)
                         .multilineTextAlignment(.center)
