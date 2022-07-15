@@ -48,9 +48,13 @@ struct BusinessDetail: View {
             
             
             Group {
+                HStack{
+                    BusinessTitle(business: business)
+                        .padding()
+                    
+                    YelpAttribution(link: business.url!)
+                }
                 
-                BusinessTitle(business: business)
-                    .padding()
                 
                 Divider()
                 
@@ -95,7 +99,6 @@ struct BusinessDetail: View {
             
             // Get directions button
             Button {
-                // TODO: Show directions
                 showDirections = true
             } label: {
                 ZStack {

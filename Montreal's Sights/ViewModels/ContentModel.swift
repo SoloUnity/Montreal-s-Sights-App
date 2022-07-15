@@ -15,6 +15,7 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var restaurants = [Business]()
     @Published var sights = [Business]()
     @Published var authorizationState = CLAuthorizationStatus.notDetermined
+    @Published var placemark: CLPlacemark?
     
     override init(){
         
@@ -62,6 +63,19 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
             // We have a location
             // Stop requesting the location after we get it once
             locationManager.stopUpdatingLocation()
+            
+            // Get the placemark of the user
+            let geoCoder = CLGeocoder() // User friendly way of seeing location
+            
+            geoCoder.reverseGeocodeLocation(userLocation!){ (placemarks, error) in
+                
+                // Check that there aren't errors
+                if error == nil && placemarks != nil{
+                    
+                    self.placemark = placemarks?.first
+                }
+                
+            }
             
             // Send coordinates to Yelp API
             getBusinesses(category: Constants.sightsKey, location: userLocation!)

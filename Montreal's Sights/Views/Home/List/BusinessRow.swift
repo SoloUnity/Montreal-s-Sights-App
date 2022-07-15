@@ -17,7 +17,7 @@ struct BusinessRow: View {
             
             HStack {
                 // Image
-                let uiImage = UIImage(data: business.imageData ?? Data())
+                let uiImage = UIImage(data: business.imageData ?? Data()) // Image from json
                 Image(uiImage: uiImage ?? UIImage())
                     .resizable()
                     .frame(width:58, height:58)
@@ -44,7 +44,8 @@ struct BusinessRow: View {
                 }
             }
             
-            Divider()
+            DashedDivider()
+                .padding()
         }
         .foregroundColor(.black)
         

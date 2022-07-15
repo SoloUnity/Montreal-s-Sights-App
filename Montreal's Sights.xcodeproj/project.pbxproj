@@ -15,6 +15,8 @@
 		8B2B79DF287CB4A90063FC7C /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B79DE287CB4A90063FC7C /* DirectionsView.swift */; };
 		8B2B79E1287CB5110063FC7C /* BusinessTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B79E0287CB5110063FC7C /* BusinessTitle.swift */; };
 		8B2B79E3287CC1F80063FC7C /* DirectionsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2B79E2287CC1F80063FC7C /* DirectionsMap.swift */; };
+		8B4AE4312880E4260098C895 /* YelpAttribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4AE4302880E4260098C895 /* YelpAttribution.swift */; };
+		8B4AE4332880E62A0098C895 /* DashedDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4AE4322880E62A0098C895 /* DashedDivider.swift */; };
 		8B80FB65287B229200E083DD /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FB64287B229200E083DD /* BusinessRow.swift */; };
 		8B80FB68287B323200E083DD /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B80FB67287B323200E083DD /* BusinessDetail.swift */; };
 		8B872394287B712C00DF12F1 /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B872393287B712C00DF12F1 /* BusinessMap.swift */; };
@@ -39,6 +41,8 @@
 		8B2B79DE287CB4A90063FC7C /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
 		8B2B79E0287CB5110063FC7C /* BusinessTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTitle.swift; sourceTree = "<group>"; };
 		8B2B79E2287CC1F80063FC7C /* DirectionsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsMap.swift; sourceTree = "<group>"; };
+		8B4AE4302880E4260098C895 /* YelpAttribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAttribution.swift; sourceTree = "<group>"; };
+		8B4AE4322880E62A0098C895 /* DashedDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedDivider.swift; sourceTree = "<group>"; };
 		8B80FB64287B229200E083DD /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 		8B80FB67287B323200E083DD /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
 		8B872393287B712C00DF12F1 /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
@@ -122,12 +126,22 @@
 		8B2138832875DAB400BB055C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8B4AE42F2880E4190098C895 /* Common */,
 				8B2138752875DA3600BB055C /* LaunchView.swift */,
 				8BA133DB287A594100C44B12 /* Home */,
 				8BA133DA287A593C00C44B12 /* Denied */,
 				8BA133D9287A593500C44B12 /* Onboarding */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8B4AE42F2880E4190098C895 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8B4AE4302880E4260098C895 /* YelpAttribution.swift */,
+				8B4AE4322880E62A0098C895 /* DashedDivider.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		8B80FB66287B322400E083DD /* Detail */ = {
@@ -275,11 +289,13 @@
 				8BA133E2287A5E9000C44B12 /* BusinessSectionHeader.swift in Sources */,
 				8B2138742875DA3600BB055C /* MontrealsSightsApp.swift in Sources */,
 				8B80FB68287B323200E083DD /* BusinessDetail.swift in Sources */,
+				8B4AE4332880E62A0098C895 /* DashedDivider.swift in Sources */,
 				8BA133D52879049200C44B12 /* BusinessSearch.swift in Sources */,
 				8B2B79E1287CB5110063FC7C /* BusinessTitle.swift in Sources */,
 				8BA133E0287A5C4000C44B12 /* BusinessList.swift in Sources */,
 				8B872394287B712C00DF12F1 /* BusinessMap.swift in Sources */,
 				8BA133E4287A5F3300C44B12 /* BusinessSection.swift in Sources */,
+				8B4AE4312880E4260098C895 /* YelpAttribution.swift in Sources */,
 				8B2138852875DD1500BB055C /* ContentModel.swift in Sources */,
 				8BE6B718287E4F7F003FAC25 /* OnboardingView.swift in Sources */,
 				8BA133D8287907D600C44B12 /* Constants.swift in Sources */,
